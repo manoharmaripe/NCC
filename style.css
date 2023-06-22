@@ -331,7 +331,7 @@ footer {
         margin-right: 7px;
     }
 
-    .footer-container {
+    #footer {
         flex-direction: column;
         text-align: center;
     }
