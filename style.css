@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(33, 177, 213);
+    padding: 0px 10px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+#logo {
+    color: white;
+    /* display: flex; */
+}
+
+#logo img {
+    float: left;
+    width: 50px;
+    height: 70px;
+    margin: auto 7px;
+    padding: 8px;
+}
+
+.topnav-options p {
+    color: rgb(0, 7, 9);
+    float: left;
+    margin: 25px 7px;
+    padding: auto;
+}
+
+.topnavlaptop a {
+    float: right;
+    display: block;
+    color: rgb(0, 7, 9);
+    text-align: center;
+    margin: 25px 7px;
+    text-decoration: none;
+}
+
+.topnav-options a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-ncc {
+    margin-top: 70px;
+}
+
+.content-title {
+    margin-top: 2px;
+    text-align: center;
+}
+
+.content-title-para {
+    padding: 0px 40px;
+    font-size: large;
+}
+
+.box {
+    margin: auto;
+    width: 70%;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.505);
+    animation-name: slide-right;
+    animation-duration: 1.5s;
+}
+
+#button a:hover {
+    background-color: #1b1a1a;
+}
+
+.bottomnav {
+    margin-top: 50px;
+    display: flex;
+    /* overflow: hidden; */
+    padding: 0px 150px;
+    background-color: rgb(142, 55, 11);
+    justify-content: space-between;
+}
+
+.bottomnav p {
+    color: white;
+    /* float: left; */
+    font-size: 22px;
+    margin: 15px 10px;
+}
+
+#icons {
+    display: flex;
+}
+
+#icons a {
+    /* float: right; */
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 15px 10px;
+    text-decoration: none;
+}
+
+.bottomnav a:hover {
+    background-color: #1d1a1a;
+    color: black;
+}
+
+footer {
+    background-color: rgb(30, 30, 30);
+    padding: auto;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-column p {
+    font-size: 18px;
+    margin: auto;
+    color: white;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.footer-header {
+    text-align: center;
+    color: rgb(190, 18, 18);
+
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-links a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.quick-links a:hover {
+    color: #ccc;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us p {
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+
+.copyrights {
+    text-align: center;
+    padding: 20px;
+}
+
+.copyrights p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+#pledge p {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.motto-para {
+    text-align: center;
+    padding: 0px 100px;
+    font-size: x-large;
+}
+
+.set {
+    margin-top: 80px;
+    padding: 1px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: auto;
+    align-items: center;
+    /* Align items horizontally to the center */
+    /* Align items vertically to the center */
+    /* min-height: 100vh; Set a minimum height to make sure the header row is centered on the page */
+}
+
+.team-member {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #ccc;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.heads {
+    font-weight: bold;
+    background-color: #ddd;
+    margin-bottom: 5px;
+}
+
+#gallery-image {
+    width: 400px;
+    height: 400px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+}
+
+.grid-item {
+    margin: 25px;
+    padding: auto;
+}
+
+.copyrights {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.copyrights p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(200, 200, 200);
+}
+
+#mn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #mn {
+        display: block;
+        padding: 20px 10px;
+        float: right;
+    }
+
+    .topnav {
+        overflow: visible;
+    }
+
+    .dropdown-toggle {
+        background-color: rgb(0, 7, 9);
+        border-color: rgb(0, 7, 9);
+    }
+
+    .dropdown-toggle:hover {
+        background-color: rgb(6, 80, 101);
+        border-color: rgb(0, 7, 9);
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: top;
+        background-color: aliceblue;
+        min-width: 110px;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(0, 7, 9);
+        ;
+        padding: 3px 0px;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnavlaptop {
+        display: none;
+    }
+
+    .topnav-options {
+        margin-right: 7px;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bottomnav {
+        flex-direction: column;
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    .bottomnav p {
+        text-align: center;
+    }
+
+    #icons {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 10px;
+        max-width: 200px;
+    }
+}
