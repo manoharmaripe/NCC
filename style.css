@@ -244,6 +244,7 @@ footer {
 }
 
 #gallery-image {
+    align-items: center;
     width: 350px;
     height: 350px;
 }
