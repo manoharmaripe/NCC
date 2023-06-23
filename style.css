@@ -244,13 +244,13 @@ footer {
 }
 
 #gallery-image {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 5px;
 }
 
